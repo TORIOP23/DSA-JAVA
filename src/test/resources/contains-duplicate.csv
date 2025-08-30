@@ -1,0 +1,9 @@
+input,expected,description
+"1,2,3,1",true,"Basic duplicate case"
+"1,2,3,4",false,"No duplicates"
+"",false,"Empty array"
+"42",false,"Single element"
+"0,0,0",true,"Multiple zeros"
+"-1,-1",true,"Negative duplicates"
+"1,2,3,4,5,6,7,8,9,10",false,"Large array no duplicates"
+"2,14,18,22,22",true,""
