@@ -1,4 +1,4 @@
-package com.toriop;
+package com.toriop.problems;
 
 import java.util.HashMap;
 import java.util.Map;

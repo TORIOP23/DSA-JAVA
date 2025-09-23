@@ -1,4 +1,4 @@
-package com.toriop;
+package com.toriop.problems;
 
 
 /**

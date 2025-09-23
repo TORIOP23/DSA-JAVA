@@ -1,5 +1,6 @@
 package com.toriop;
 
+import com.toriop.problems.ContainsDuplicate;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
