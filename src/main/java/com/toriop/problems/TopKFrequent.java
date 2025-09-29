@@ -25,15 +25,17 @@ public class TopKFrequent {
             }
             buckets[fre].add(key);
         }
-        List<Integer> result = new ArrayList<>();
-        for (int i = buckets.length - 1; i >= 0 && result.size() < k; i--) {
-            if (buckets[i] != null)
-                result.addAll(buckets[i]);
+        int[] res = new int[k];
+        int index = 0;
+        for (int i = buckets.length - 1; i > 0 && index < k; i--) {
+            for (int n : buckets[i]) {
+                res[index++] = n;
+                if (index == k) {
+                    return res;
+                }
+            }
         }
-        int[] ans = new int[k];
-        for (int i = 0; i < k; i++)
-            ans[i] = result.get(i);
-        return ans;
+        return res;
     }
 
     /**
